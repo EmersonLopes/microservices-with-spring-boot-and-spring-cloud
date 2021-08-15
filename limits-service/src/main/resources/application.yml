@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: limits-service
+  config:
+    import: optional:configserver:http://localhost:8888
+  cloud:
+    config:
+      service:
+        git:
+          uri: file:///D:/Dev/Projects/SpringBoot/git
+
+limits-service:
+  minimum: 2
+  maximum: 998
+
