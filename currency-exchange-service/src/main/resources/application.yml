@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: currency-exchange
+  config:
+    import: optional:configserver:http://localhost:8888
+  cloud:
+    config:
+      service:
+        git:
+          uri: file:///D:/Dev/Projects/SpringBoot/git
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+  h2:
+    console:
+      enabled: true
+    
+  
+    
+server:
+  port: 8000
