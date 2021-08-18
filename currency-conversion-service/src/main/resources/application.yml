@@ -1,6 +1,6 @@
 spring:
   application:
-    name: currency-service
+    name: currency-conversion
   config:
     import: optional:configserver:http://localhost:8888
   cloud:
@@ -11,3 +11,8 @@ spring:
   
 server:
   port: 8100
+  
+eureka:
+  client:
+    serviceUrl: 
+      defaultZone: http://localhost:8761/eureka
