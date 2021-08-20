@@ -1,6 +1,10 @@
 spring:
   application:
     name: api-gateway
+  jpa:
+    properties:
+      org:
+        hibernate
 #  cloud:
 #    gateway:
 #      discovery:
